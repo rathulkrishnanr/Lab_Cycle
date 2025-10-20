@@ -9,8 +9,8 @@ marks=['math_score','history_score','physics_score','chemistry_score','biology_s
 for col in marks:
     df[col] = df[col].fillna(df[col].median())
 
-print(f"✓ Cleaned dataset: {df.shape[0]} rows, {df.shape[1]} columns")
-print(f"✓ Missing values: {df.isnull().sum().sum()}")   
+print(f"Cleaned dataset: {df.shape[0]} rows, {df.shape[1]} columns")
+print(f"Missing values: {df.isnull().sum().sum()}")   
 
 print("\nTop Students by Subject:")
 
@@ -18,7 +18,7 @@ for col in marks:
     subject = col.replace('_score', '').title()
     max_idx = df[col].idxmax()
     student = df.loc[max_idx]
-    print(f"  {subject:12s}: {student['first_name']} {student['last_name']} - {student[col]} marks")
+    print(f"{subject:}: {student['first_name']} {student['last_name']} - {student[col]} marks")
 
 print("\nAverage Marks by Grade:")
 

@@ -32,7 +32,7 @@ companydata ={
 }
 
 companydata["TotelUnit"] = []
-companydata["TotelProfilt"] = []
+companydata["TotelProfit"] = []
 
 for i in range(12):
     total = (companydata["FaceCream"][i]+companydata["FaceWash"][i]+companydata["ToothPaste"][i]+companydata["BathingSoap"][i]+companydata["Shampoo"][i]+companydata["Moisturizer"][i])
