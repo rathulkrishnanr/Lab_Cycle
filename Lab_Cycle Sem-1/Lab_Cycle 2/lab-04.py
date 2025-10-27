@@ -37,12 +37,12 @@ companydata["TotelProfit"] = []
 for i in range(12):
     total = (companydata["FaceCream"][i]+companydata["FaceWash"][i]+companydata["ToothPaste"][i]+companydata["BathingSoap"][i]+companydata["Shampoo"][i]+companydata["Moisturizer"][i])
     companydata["TotelUnit"].append(total)
-    companydata["TotelProfilt"].append(total*0.30)
+    companydata["TotelProfit"].append(total*0.30)
 
 df = pd.DataFrame(companydata)
 df.to_csv("company.csv", index= False)
 
-# a) Toothpaste Sales - Scatter Plot
+# a Toothpaste Sales - Scatter Plot
 plt.figure(figsize=(10, 6))
 plt.scatter(df["MonthNumber"],df["ToothPaste"],s=100,alpha=0.7)
 plt.title('ToothPaste Sales by Month', fontsize=14,fontweight='bold')

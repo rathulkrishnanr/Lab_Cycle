@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df=pd.read_csv("Auto.csv")
+df=pd.read_csv("Lab_Cycle Sem-1\Lab_Cycle 2\Auto.csv")
 
 print(df.head())
 

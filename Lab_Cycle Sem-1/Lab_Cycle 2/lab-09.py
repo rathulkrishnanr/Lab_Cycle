@@ -1,6 +1,5 @@
 # Import necessary libraries
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 # ===========================
@@ -105,7 +104,6 @@ axes[1].grid(axis='y', alpha=0.3)
 
 plt.tight_layout()
 plt.show()
-print("\nHistograms saved as 'histograms.png'")
 
 # ===========================
 # 6. Bar Chart for Species Distribution
@@ -120,4 +118,3 @@ plt.xticks(rotation=45, ha='right')
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 plt.show()
-print("\nSpecies distribution bar chart saved as 'species_distribution.png'")

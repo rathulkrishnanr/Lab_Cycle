@@ -2,13 +2,13 @@ def find_name_in_wordlist(wordlist,name):
     count =0
     index_list =[]
 
-    for word in wordlist:
+    for i, word in enumerate (wordlist):
         index = word.find(name)
         if index!= -1:
             count +=1
-            index_list.append(index)
+            index_list.append(i)
         else:
-            index_list.append(-1)
+            index_list.append(0)
     
     return(count,index_list)
 
